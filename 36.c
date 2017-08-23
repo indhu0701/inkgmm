@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main()
 {
-      double firstNumber, secondNumber, temporaryVariable;
+      int firstNumber, secondNumber, temporaryVariable;
       printf("Enter first number: ");
-      scanf("%lf", &firstNumber);
+      scanf("%d", &firstNumber);
       printf("Enter second number: ");
-      scanf("%lf",&secondNumber);
+      scanf("%d",&secondNumber);
       temporaryVariable = firstNumber;
       firstNumber = secondNumber;
       secondNumber = temporaryVariable;
-      printf("\nAfter swapping, firstNumber = %.2lf\n", firstNumber);
-      printf("After swapping, secondNumber = %.2lf", secondNumber);
+      printf("\nAfter swapping, firstNumber = %d.2\n", firstNumber);
+      printf("After swapping, secondNumber = %d.2", secondNumber);
       return 0;
 }
